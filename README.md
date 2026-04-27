@@ -3,23 +3,23 @@
 Este repositorio contiene la resolución de **64 ejercicios de SQL** aplicados sobre la base de datos **Shakila**. El objetivo del proyecto es demostrar habilidades en la consulta, filtrado, agregación y manipulación de datos relacionales en un entorno de videoclub.
 
 ## 🚀 Tecnologías utilizadas
-* **Motor de Base de Datos:** PostgreSQL 
-* **Herramienta de Gestión:** DBeaver
+* **Motor de base de datos:** PostgreSQL 
+* **Herramienta de gestión:** DBeaver
 * **Lenguaje:** SQL Estándar
 
 ## 📊 Resumen del trabajo
 A lo largo del proyecto, he trabajado en:
-1. **Consultas Básicas:** Selección de actores, películas y clientes.
-2. **Filtrado Avanzado:** Uso de `WHERE` e `IN` para segmentar datos.
-3. **Joins Complejos:** Conexión de hasta 5 tablas (ej. desde `Category` hasta `Rental`) para obtener informes detallados.
-4. **Lógica de Negocio:**
+1. **Consultas básicas:** Selección de actores, películas y clientes.
+2. **Filtrado avanzado:** Uso de `WHERE` e `IN` para segmentar datos.
+3. **Joins complejos:** Conexión de hasta 5 tablas (ej. desde `Category` hasta `Rental`) para obtener informes detallados.
+4. **Lógica de negocio:**
    - Cálculo de duraciones reales de alquiler.
    - Identificación de clientes frecuentes.
    - Análisis de inventario por categoría y año.
 
 ## 🛠️ Problemas encontrados y soluciones
 
-### 1. Lógica de Negación (`NOT IN` vs `JOIN`)
+### 1. Lógica de negación (`NOT IN` vs `JOIN`)
 * **Problema:** Al intentar encontrar actores que *no* habían actuado en una categoría (ej. 'Music'), el uso de `JOIN` con `!=` devolvía resultados falsos.
 * **Solución:** Implementé subconsultas con `NOT IN` para crear una "lista negra" de IDs y filtrar correctamente al resto de actores.
 
